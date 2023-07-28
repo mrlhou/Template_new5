@@ -1,0 +1,24 @@
+/* start About */
+
+.about {
+    padding-top: var(--section-padding);
+    text-align: center;
+    overflow: hidden;
+}
+
+.about img {
+    position: relative;
+    max-width: 100%;
+    bottom: -118px;
+    margin-top: -118px;
+}
+
+@media (max-width: 767px) {
+    .about img {
+        bottom: -65px;
+        margin-top: -65px;
+    }
+}
+
+
+/* End About */

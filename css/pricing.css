@@ -1,0 +1,133 @@
+/* start Pricing */
+
+.pricing {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    text-align: center;
+}
+
+.pricing .plans {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(201px, 1fr));
+    gap: 30px;
+}
+
+.pricing .plans .plan {
+    background-color: #fcfcfc;
+}
+
+.pricing .plans .plan .head {
+    padding: 40px 20px;
+    border-top: 1px solid var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+}
+
+.pricing .plans .plan .head h3 {
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.pricing .plans .plan .head span {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.pricing .plans .plan .head span::before {
+    content: "$";
+    position: relative;
+    font-size: 25px;
+    left: 18px;
+    top: -36px;
+    margin-right: 30px;
+}
+
+.pricing .plans .plan .head span::after {
+    content: "/Mo";
+    position: relative;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.pricing .plans .plan ul {
+    padding: 30px 20px 20px;
+    border-bottom: 1px solid var(--main-color);
+}
+
+.pricing .plans .plan ul li {
+    padding: 15px 0;
+    border-bottom: 1px solid var(--main-color);
+}
+
+.pricing .plans .plan ul li:last-of-type {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.pricing .plans .plan .foot {
+    padding: 40px 20px 10px;
+    text-transform: capitalize;
+}
+
+.pricing .plans .plan .foot a,
+.pricing .contact-btn {
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+}
+
+.pricing .plans .plan .foot a {
+    border: 1px solid var(--main-color);
+    position: relative;
+    z-index: 1;
+}
+
+.pricing .plans .plan .foot a::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: var(--main-color);
+    border-radius: 4px;
+    z-index: -1;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+.pricing .plans .plan .foot a:hover::before,
+.pricing .plans .plan .foot a:hover {
+    width: 100%;
+    color: #fff;
+}
+
+.pricing .contact-btn {
+    color: #fff;
+    background-color: var(--main-color);
+}
+
+.pricing .contact-text {
+    padding: 40px 0;
+    letter-spacing: 0.5px;
+}
+
+.pricing .contact-text::first-letter {
+    text-transform: capitalize;
+}
+
+.pricing .plans .plan .foot a:hover,
+.pricing .contact-btn:hover {
+    opacity: 0.9;
+}
+
+
+/* End Pricing */

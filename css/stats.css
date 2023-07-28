@@ -1,0 +1,77 @@
+/* start stats */
+
+.stats {
+    background-image: url(../images/stats.jpg);
+    background-size: cover;
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    position: relative;
+    text-align: center;
+}
+
+.stats::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 70%);
+}
+
+.stats .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--transparent-color);
+    padding: 50px;
+    position: relative;
+    z-index: 3;
+}
+
+.stats .container .box {
+    flex-basis: 25%;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+    .stats .container .box {
+        flex-basis: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .stats .container .box {
+        flex-basis: 50%;
+    }
+}
+
+.stats .container .box i {
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.stats .container .box h2 {
+    padding: 10px 0;
+    font-size: 40px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+
+.stats .container .box p {
+    color: #fff;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+
+/* End stats */

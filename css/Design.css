@@ -1,0 +1,77 @@
+/* start Design */
+
+.design {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-image: url(../images/design.png);
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.design::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 50%);
+}
+
+.design .image,
+.design .text {
+    position: relative;
+    flex: 1;
+    z-index: 3;
+}
+
+.design .image {
+    position: relative;
+    text-align: center;
+}
+
+.design .image img {
+    position: relative;
+    bottom: -120px;
+}
+
+.design .text {
+    padding: 50px;
+    background-color: var(--transparent-color);
+    line-height: 2;
+    color: #fff;
+}
+
+.design .text h2 {
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+@media(max-width: 767px) {
+    .design .image {
+        display: none;
+    }
+    .design .text h2 {
+        font-size: 20px;
+    }
+}
+
+.design .text ul li {
+    position: relative;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.design .text ul li i {
+    margin-right: 10px;
+}
+
+
+/* End Design */
